@@ -1,14 +1,16 @@
 <!doctype html>
-<html dir="ltr" lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    {{ encore_entry_link_tags('app') }}
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
 </head>
 <body>
-<p class="text-3xl text-blue-600 font-bold underline">
+<h1 class="text-3xl text-yellow-800 font-bold underline">
     Hello world!
-</p>
+</h1>
 </body>
+</html>
 
